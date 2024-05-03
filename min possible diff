@@ -1,0 +1,16 @@
+//to calculate min possible difference
+def calmindiff(A,L):
+   m=max(A)-min(A)
+   for i in range(len(A)):
+        if A[i]>=L:
+           A[i]-=L
+        else:
+           A[i]+=L
+    n=max(A)-min(A)
+    if m>n:
+        return n
+    else:
+        return m
+A=[1,2,6,8,21]
+L=4
+print(calmindiff(A,L))
