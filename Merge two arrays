@@ -1,0 +1,21 @@
+public class MergeArrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] arr1=new int[] {1,2,3};
+		int[] arr2=new int[] {4,5,6,7};
+		int i;
+		int[] re=new int[arr1.length+arr2.length];
+		for(i=0;i<arr1.length;i++) {
+			re[i]=arr1[i];
+		}
+		for( i=0;i<arr2.length;i++) {
+			re[(i+(arr1.length))]=arr2[i];
+		}
+		for(i=0;i<re.length;i++) {
+			System.out.print(re[i]);
+		}
+
+	}
+
+}
