@@ -1,0 +1,20 @@
+public class SingleDimensionArray {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int[] arr=new int[5];
+		int n;
+		int s=0;
+		for(int i=0;i<arr.length;i++)
+		{
+			n=sc.nextInt();
+			arr[i]=n;
+			s=s+n;
+			
+		}
+		System.out.println(s);
+		sc.close();
+		
+	}
+
+}
