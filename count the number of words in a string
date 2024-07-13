@@ -1,0 +1,17 @@
+public class StringsPract {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("enter the string : ");
+		String s1=new String();
+		s1=sc.nextLine();
+		
+		//System.out.println(s1.length());
+		String[] s2=s1.split(" ");
+		System.out.println(s2.length);
+		sc.close();
+		
+	}
+
+	
+}
