@@ -1,0 +1,29 @@
+public class CharTypeCount{
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enetr the string : ");
+		String s1=sc.nextLine();
+		int upperCharacter=0,lowercharacter=0,integers=0,spicialCharacters=0;
+		
+		char[] arr=s1.toCharArray();
+		for(char c:arr) {
+			if(Character.isUpperCase(c)) {
+				upperCharacter++;
+			}else if(Character.isLowerCase(c)) {
+				lowercharacter++;
+			}
+			else if(Character.isDigit(c)) {
+				integers++;
+			}
+			else {
+				spicialCharacters++;
+			}
+		}
+		System.out.println(upperCharacter+"\n"+lowercharacter+"\n"+integers+"\n"+spicialCharacters);
+		sc.close();
+		
+
+	}
+
+}
