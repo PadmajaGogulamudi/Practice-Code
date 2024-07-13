@@ -1,0 +1,27 @@
+public class StringPracticeT {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s1=new String();
+		System.out.println("enetr the String : ");
+		s1=sc.nextLine();
+		String[] arr=s1.split(" ");
+		for(int i=0;i<arr.length;i++) {
+			if(i%2==0) {
+				arr[i]=arr[i].toUpperCase();
+			}
+			else {
+				String s2="";
+				for(int j=0;j<arr[i].length();j++) {
+					s2=arr[i].charAt(j)+s2;
+				}
+				arr[i]=s2;
+			}
+		}
+		String s3=String.join(" ",arr);
+		System.out.println(s3);
+		sc.close();
+		
+	}
+
+}
