@@ -1,0 +1,26 @@
+public class StringPrath {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enetr the string : ");
+		String s1=sc.nextLine();
+		String[] arr=s1.split(" ");
+		int[] arr1=new int[arr.length];
+		int maxele=0;
+		String s2="";
+		for(int i=0;i<arr.length;i++) {
+			arr1[i]=arr[i].length();
+			if(maxele<arr1[i]) {
+				maxele=arr1[i];
+			}
+			s2=s2+String.valueOf(arr1[i]);
+		}
+		
+		int resu=s2.indexOf(String.valueOf(maxele));
+		System.out.println(arr[resu]);
+		sc.close();
+		
+
+	}
+
+}
