@@ -1,0 +1,27 @@
+public class StringPrath {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enetr the string1 : ");
+		//String s1=sc.nextLine();
+		System.out.println("enetr the string2 : ");
+		//String s2=sc.nextLine();
+		String s="New York";
+		String s1="New York".toLowerCase();
+		String s2="NWYR".toLowerCase();
+		String s3="";
+		for(int i=0;i<s1.length();i++) {
+			char c=s1.charAt(i);
+			if(s2.contains(String.valueOf(c))) {
+				
+				s3+=s.charAt(i)+"+";
+			}
+		}
+		System.out.println(s3);
+		
+		sc.close();
+		
+
+	}
+
+}
