@@ -1,0 +1,18 @@
+public class PalindromeCheck{
+public static String check(String str){
+  String s1="";
+for(int i=0;i<str.length();i++){
+s1=String.valueOf(str.charAt(i))+s1;
+}
+if(s1.equals(str)){
+return "yes";
+}
+else{
+return "No";
+}
+}
+public static void main(String[] args){
+  String s1="abcba";
+System.out.println(check(s1));
+}
+}
