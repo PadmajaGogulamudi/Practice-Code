@@ -1,0 +1,18 @@
+public class RotateStr{
+Public  static String Check(String str1,String str2){
+if(str1.length()!=str2.length()){
+return "no";}
+String re=str1+str1;
+if(re.contains(str2)){
+return "yes";
+}
+else{
+return "no";
+}
+}
+public static void main(String[] args){
+String s1="abcd";
+String s2="bcda";
+System.out.println(Check(s1,s2));
+}
+}
