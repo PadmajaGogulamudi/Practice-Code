@@ -1,0 +1,17 @@
+CREATE DATABASE INSTAGRAM;
+
+USE instagram;
+CREATE TABLE ACCOUTS(USERNAME VARCHAR(255),FIRSTNAME CHAR(20),POST INT, COUNTRY CHAR(29));
+SELECT * FROM ACCOUTS;
+INSERT INTO ACCOUTS VALUES ("_REDDY_457","REDDY",0,"INDIA"),("0WIW-","UCBI",9,"UGFCB"),("VFGEX+77","DBCY",6,"VDGVCCU"),("YYCBJS@4BE","EYCJSJ",0,"INDIA");
+CREATE TABLE LIKES(USERNAME VARCHAR(50),LIKES INT,COMMENTS INT);
+INSERT INTO LIKES VALUES ("_REDDY_457",4,6),("0WIW-",2,0),("VFGEX+77",9,2);
+SELECT * FROM LIKES;
+select * from accouts where post > 5 order by FIRSTNAME;
+select count(firstname) from accouts;
+select count(firstname),country,sum(post) from accouts  group by country order by sum(post) ;
+select sum(post) from accouts;
+select avg(likes),sum(likes) from likes;
+select count(firstname),country from accouts group by country having sum(post)>0 order by sum(post);
+
+
