@@ -1,0 +1,6 @@
+s="abanhs"
+h=len(s)//2
+sys= s[:h]==s[h:] if (len(s)%2==0) else s[:h]==s[h+1:]
+p=s==s[::-1]
+print("yesS" if sys else "NoS")
+print("Y" if p else "n")
